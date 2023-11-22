@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t1.css">
+    <title>Employee CRUD</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Employee Details</h1>
+        <form id="infoForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstname" >
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" >
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="number" id="phoneNumber" >
+
+            <label for="emailId">Email Id:</label>
+            <input type="email" id="emailId" >
+
+            <button type="button" onclick="addField()">Add Employee</button>
+        </form>
+
+        <table id="infoTable">
+            <thead>
+                <tr>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>Phone Number:</th>
+                    <th>Email Id:</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="infoTableBody"></tbody>
+        </table>
+        <form id="editForm" style="display: none;">
+            <label for="editfName">First Name</label>
+            <input type="text" id="editfName" >
+
+            <label for="editlName">Last Name:</label>
+            <input type="text" id="editlName" >
+
+            <label for="editPhno">Phone Number:</label>
+            <input type="number" id="editPhno">
+
+            <label for="editEmail">Email Id:</label>
+            <input type="email" id="editEmail" >
+
+            <button type="button" onclick="saveEdit()">Save</button>
+        </form>
+    </div>
+    <script src="t1.js"></script>
+</body>
+</html>
